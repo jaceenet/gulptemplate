@@ -2,12 +2,19 @@
 
 body
 {
-    color: $theme;
+    color: $theme_grade1;
     font-size: 14px;
 }
 
 h1
 {
-    
+    line-height: 2;
     font-size: 2rem;
+}
+
+h2{
+    font-size: 1.4rem;
+    line-height: 2;
+    font-weight: 400;
+    font-family: $font-family;
 }

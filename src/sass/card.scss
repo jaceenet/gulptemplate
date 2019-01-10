@@ -11,10 +11,12 @@
 
   h1
   {
+    font-family:  $font-header;
+
       color: white;
       background-color: black;
-      margin: 0 -2rem;
-      padding: 1rem 2rem;
+      margin: 0 -2rem 1rem -2rem;
+      padding: 0 2rem;
 
   }
 }
