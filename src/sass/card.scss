@@ -1,0 +1,17 @@
+@import '_mixin';
+
+.card {
+  background-color: white;
+  position:absolute;
+  margin: 2rem;
+  padding: 2rem;
+  @include border-radius(15px);
+
+  h1
+  {
+      background-color: black;
+      margin: 0 -2rem;
+      padding: 1rem 2rem;
+
+  }
+}
