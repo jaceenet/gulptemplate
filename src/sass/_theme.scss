@@ -1,3 +1,6 @@
+$theme_light: white;
+
+
 $theme_grade1: #0CC1FF;
 $theme_grade2: #374955;
 $theme_grade3: #9AAEBB;
@@ -11,14 +14,7 @@ $font-header: 'Arvo', serif;
 $font-family: 'Archivo', sans-serif;
 
 
-
-body{
-    font-family: $font-family;
-    font-size: 1rem;
-}
-
-h1 {
-    font-family: $font-family;
-    font-size: 2rem;
-    font-weight: 400;
-}
+.normal {
+    background-color: $theme_grade1;
+    background-color: $theme_light;
+  }

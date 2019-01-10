@@ -1,6 +1,27 @@
+
+body{
+    font-family: $font-family;
+    font-size: 1rem;
+}
+
+
+
 .container {
 
     display: flex;
+    flex-direction: row;
+
+}
+
+button {
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+
+.topright {
+    display: flex;
+    align-content: flex-end;
     flex-direction: row;
 
 }
