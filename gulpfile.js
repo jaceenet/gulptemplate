@@ -3,6 +3,7 @@ var gutil = require('gulp-util');
 var autoprefixer = require('gulp-autoprefixer');
 var sass = require('gulp-sass');
 var browsersync = require("browser-sync").create();
+var chromatic = require('chromatic-sass');
 
 inlineCss = require('gulp-inline-css');
 
@@ -35,7 +36,12 @@ function html(){
 // keeps gulp from crashing for scss errors
 function scss(){
   return gulp.src('./src/*.scss')
-      .pipe(sass({ errLogToConsole: true, outputStyle: "expanded" }))
+      .pipe(sass(
+        { errLogToConsole: true, 
+          outputStyle: "expanded", 
+          functions: chromatic 
+        }
+      ))
       .on('error', gutil.log)
       .pipe(autoprefixer({
         browsers: ['last 2 versions'],

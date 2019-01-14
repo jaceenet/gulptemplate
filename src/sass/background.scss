@@ -1,6 +1,0 @@
-@import '_mixin';
-@import '_theme';
-
-body {	
-	@include gradient($theme_grade1, $theme_grade1);
-}

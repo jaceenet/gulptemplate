@@ -1,33 +1,46 @@
 @import '_mixin';
+@import 'variables';
+
+.card-title {
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  margin-top: 0;
+  padding:  0.5rem 1rem;
+}
 
 .card {
-  background-color: white;
-  
-  margin: 2rem;
-  padding: 2rem;
-  @include border-radius(15px);
-  
-  @include box-shadow(1px, 1px, 12px, grey);
+  background-color: $theme_light;  
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
 
-  h1
-  {
-    font-family:  $font-header;
+  // @include border-radius(15px);
+  // @include box-shadow(1px, 1px, 12px, grey);
 
-      color: white;
+  margin-right: 2rem;
 
-
+  h1, .title
+  {    
+    background-color: $theme_grade5;
+    color: $theme_grade1;    
   }
 
-  .card-top{
-    background-color: black;
-    
+  .card-top{    
     margin: 0 -2rem 1rem -2rem;
     padding: 0 2rem;
   }
 
 }
 
-.btn {
-  @include border-radius(2px);
-  border: 1px solid $theme_grade1;
+button {
+  @include border-radius(16px);
+  border: 1px solid $theme_grade5;
+  font-family: $font-header;
+  font-size: 1em;
+  
+  font-weight: 100;
+
+  background-color: $theme_grade5;
+  color: $theme_light;
 }
+
+

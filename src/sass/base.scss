@@ -1,16 +1,28 @@
+@import 'variables';
+
+html{
+    font:1em/1.5 $font-family;
+}
+
+h1,h2,h3,h4,h5,h6,hgroup,
+ul,ol,dd,
+p,figure,
+pre,table,fieldset,hr {
+    margin-bottom:1.5rem;
+}
+
+::-moz-selection { background: $theme_grade1;; }
+::selection { background: $theme_grade1; }
 
 body{
     font-family: $font-family;
     font-size: 1rem;
+    background-image: chromatic-gradient(to left, $theme_grade1, $theme_light);
 }
 
-
-
 .container {
-
     display: flex;
     flex-direction: row;
-
 }
 
 button {
@@ -23,5 +35,56 @@ button {
     display: flex;
     align-content: flex-end;
     flex-direction: row;
-
 }
+
+.vertical
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.right{
+    float: right;
+}
+
+fieldset
+{
+    border:none;
+}
+
+form
+{
+    font-family: $font-family;
+}
+
+label {
+   display: flex;
+   font-family: $font-header;
+    
+   //background-color: $theme_grade1;
+
+    color: $theme_grade2;
+
+    padding: 2px;
+
+    
+    // border-top-left-radius: 5px;
+    // border-top-right-radius: 5px;
+  
+}
+
+
+input {
+    font-family: $font-family;    
+    border: none;
+    border-bottom: 2px $theme_grade5 thin;
+    font-size: 1em;        
+ }
+
+ 
+input:active, input::selection, input:focus {
+    outline: none;
+    border-bottom: 1px dashed $theme_grade2;
+    //background-color: $theme_grade5;
+    //color: $theme_dark;
+ }

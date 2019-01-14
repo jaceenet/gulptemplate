@@ -1,0 +1,23 @@
+
+$base_color: #0CC1FF;
+$base_color_end: #B5639F;
+
+$theme_light: white;
+$theme_dark: black;
+
+$theme_grade1: $base_color;
+$theme_grade2: chromatic-blend($base_color, $base_color_end, 'lighten');
+$theme_grade3: chromatic-blend($base_color, $base_color_end, 'lighten');
+$theme_grade4: chromatic-blend($base_color, $base_color_end, 'lighten');
+$theme_grade5: $base_color_end;
+
+$foo: chromatic-scale($theme_grade1, $theme_grade3, $theme_grade5, (stops: 7));
+
+
+@import url('https://fonts.googleapis.com/css?family=Arvo:400,400i,700,700i');
+$font-header: 'Arvo', serif;
+
+@import url('https://fonts.googleapis.com/css?family=Palanquin:400,700');
+$font-family: 'Palanquin', sans-serif;
+
+$padding_default: 2px;
